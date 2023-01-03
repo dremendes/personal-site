@@ -1,0 +1,4 @@
+baseURL = "https://mendesc.com"
+languageCode = "en-us"
+title = "André Mendes"
+theme = 'ananke'

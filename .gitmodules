@@ -1,0 +1,3 @@
+[submodule "dre-personal/themes/ananke"]
+	path = dre-personal/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke

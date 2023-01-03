@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>André Mendes</title>
+    <link>https://mendesc.com/</link>
+    <description>Recent content on André Mendes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jan 2023 17:27:16 -0300</lastBuildDate>
+    
+	<atom:link href="https://mendesc.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About my 2022</title>
+      <link>https://mendesc.com/posts/first-post/</link>
+      <pubDate>Tue, 03 Jan 2023 17:27:16 -0300</pubDate>
+      
+      <guid>https://mendesc.com/posts/first-post/</guid>
+      <description>Ok I will start blogging I got laid off last December.
+The whole team, actually. I thought it would be easier to get a new job.
+I was wrong. The market right now if full of excellent engineers looking for a new role.
+I am competent but far from competent as the most competent engineer I worked with.
+This engineer got laid off the same time I did. He&amp;rsquo;s still looking for a job.</description>
+    </item>
+    
+  </channel>
+</rss>
