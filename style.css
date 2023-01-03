@@ -1,0 +1,93 @@
+body, ul, li, p 
+{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin-bottom: 80px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: opacity 1s;
+}
+
+header img {
+    border-radius: 40%;
+}
+
+.header {
+    background: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: lightcoral;
+    text-transform: uppercase;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.flex > div {
+    flex: 1 1 500px; 
+    text-align: center;
+    margin: 10px;
+}
+
+.grid1 > div a, .flex > div a {
+    color: lightcoral;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1180px;
+    margin: 0px auto;
+    grid-gap: 20px;
+}
+
+@media (max-width: 800px) {
+    .grid1 {
+        grid-template-columns: 1fr;
+    }
+}
