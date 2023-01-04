@@ -16,4 +16,4 @@ I thought the resulted looked fine so I'm sharing: [https://spacex-launches-nine
 
 Source: https://github.com/dremendes/spacex-launches
 
-![SpaceX Launches tech challenge screenshot](./spacex-launches-ss.jpg)
+![SpaceX Launches tech challenge screenshot](../spacex-launches-ss.jpg)

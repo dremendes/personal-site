@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Leetcoding a palindomer checker | André Mendes</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="I find leetcoding enjoyable even outside interviewing context. Not enough to take it as a hobby tough.
+As now I search for a role, I practice it in my spare time (aha).
+My favourite platforms are exercism.io, leetcode.com and hackerrank.com.
+On leetcode.com you got to compare your successfull results to other submissions and this is really cool. Good data visualisation is always nice!
+I find it very noteworthy how a fancy and expressive one-line solution does not hold a good position against others regarding performance and memory usage:">
+    <meta name="generator" content="Hugo 0.68.3" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Leetcoding a palindomer checker" />
+<meta property="og:description" content="I find leetcoding enjoyable even outside interviewing context. Not enough to take it as a hobby tough.
+As now I search for a role, I practice it in my spare time (aha).
+My favourite platforms are exercism.io, leetcode.com and hackerrank.com.
+On leetcode.com you got to compare your successfull results to other submissions and this is really cool. Good data visualisation is always nice!
+I find it very noteworthy how a fancy and expressive one-line solution does not hold a good position against others regarding performance and memory usage:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mendesc.com/posts/leetcoding-a-palindomer-checker/" />
+<meta property="article:published_time" content="2023-01-04T17:08:13-03:00" />
+<meta property="article:modified_time" content="2023-01-04T17:08:13-03:00" />
+<meta itemprop="name" content="Leetcoding a palindomer checker">
+<meta itemprop="description" content="I find leetcoding enjoyable even outside interviewing context. Not enough to take it as a hobby tough.
+As now I search for a role, I practice it in my spare time (aha).
+My favourite platforms are exercism.io, leetcode.com and hackerrank.com.
+On leetcode.com you got to compare your successfull results to other submissions and this is really cool. Good data visualisation is always nice!
+I find it very noteworthy how a fancy and expressive one-line solution does not hold a good position against others regarding performance and memory usage:">
+<meta itemprop="datePublished" content="2023-01-04T17:08:13-03:00" />
+<meta itemprop="dateModified" content="2023-01-04T17:08:13-03:00" />
+<meta itemprop="wordCount" content="347">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Leetcoding a palindomer checker"/>
+<meta name="twitter:description" content="I find leetcoding enjoyable even outside interviewing context. Not enough to take it as a hobby tough.
+As now I search for a role, I practice it in my spare time (aha).
+My favourite platforms are exercism.io, leetcode.com and hackerrank.com.
+On leetcode.com you got to compare your successfull results to other submissions and this is really cool. Good data visualisation is always nice!
+I find it very noteworthy how a fancy and expressive one-line solution does not hold a good position against others regarding performance and memory usage:"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        André Mendes
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Leetcoding a palindomer checker</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2023-01-04T17:08:13-03:00">January 4, 2023</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>I find leetcoding enjoyable even outside interviewing context. Not enough to take it as a hobby tough.</p>
+<p>As now I search for a role, I practice it in my spare time (aha).</p>
+<p>My favourite platforms are <a href="https://exercism.io">exercism.io</a>, <a href="leetcode.com">leetcode.com</a> and <a href="hackerrank.com">hackerrank.com</a>.</p>
+<p>On leetcode.com you got to compare your successfull results to other submissions and this is really cool. Good data visualisation is always nice!</p>
+<p>I find it very noteworthy how a fancy and expressive one-line solution does not hold a good position against others regarding performance and memory usage:</p>
+<p>The problem:</p>
+<ol start="9">
+<li>Palindrome Number</li>
+</ol>
+<p>Given an integer x, return true if x is a palindrome, and false otherwise.</p>
+<p>My first submission:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isPalindrome</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">x</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">number</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">boolean</span> =&gt; <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">toString</span>().<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;&#39;</span>).<span style="color:#a6e22e">reverse</span>().<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#39;&#39;</span>) <span style="color:#f92672">===</span> <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">toString</span>();
+</code></pre></div></p>
+<p>How it compared to others:</p>
+<p><img src="../is-palindrome-first-submission-comparison-graph.jpg" alt="Graph showing how this submission compares to others"></p>
+<p>Upon seeing this graph, I remembered that on Leetcode.com you can go beyond just finding a solution. You can further
+optimize it for speed and low memory usage. That gives you a better positioning among other submissions.</p>
+<p>So how to optimize that one-liner?</p>
+<p>First thing I noticed it is that I was comparing two strings at the end. I could keep the unaltered number as
+a number type and cast the reversed string back to number before comparing them. Numbers comparisons are faster than
+string comparison. The graph shows:</p>
+<p><img src="../is-palindrome-second-submission-comparison-graph.jpg" alt="Graph showing the second submission with a optimized version and how it compares to others. It is a little faster than the last submission"></p>
+<p>Humm ok not much better. The string reversal is probably where the party is hapenning and with lots of run for optmization.</p>
+<p>I am sure that syntact sugar may have some checks we do not need in this case. Going raw is probably the way to optmize.</p>
+<p>I thought you know what? I&rsquo;ll just ask ChatGPT about it:</p>
+<p><img src="../asking-chat-gpt-about-fastest-way-to-reverse-string.jpg" alt="Screenshot of a conversation with ChatGPT where I ask what is the fastest way to reverse a string in Typescript"></p>
+<p>Just like I thought.</p>
+<p>So my next submission I removed the fancy reversal that splits string to an array, reverse that array, join it back and added one for loop. Like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isPalindrome</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">x</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">number</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">boolean</span> =&gt; {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">toString</span>();
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">reversed</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
+
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">str</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">--</span>) {
+        <span style="color:#a6e22e">reversed</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">str</span>[<span style="color:#a6e22e">i</span>];
+    }
+
+    <span style="color:#66d9ef">return</span> parseInt(<span style="color:#a6e22e">reversed</span>) <span style="color:#f92672">===</span> <span style="color:#a6e22e">x</span>;
+}
+</code></pre></div>
+<p>How it compared to others:</p>
+<p><img src="../is-palindrome-last-submission-comparison-graph.jpg" alt="Graph showing the last submission with a optimized version and how it compares to others. It is way faster than the last submission"></p>
+<p>Way better!</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mendesc.com/" >
+    &copy;  André Mendes 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

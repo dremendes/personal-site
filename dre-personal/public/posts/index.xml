@@ -6,10 +6,23 @@
     <description>Recent content in Posts on André Mendes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jan 2023 23:04:53 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 04 Jan 2023 17:08:13 -0300</lastBuildDate>
     
 	<atom:link href="https://mendesc.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leetcoding a palindomer checker</title>
+      <link>https://mendesc.com/posts/leetcoding-a-palindomer-checker/</link>
+      <pubDate>Wed, 04 Jan 2023 17:08:13 -0300</pubDate>
+      
+      <guid>https://mendesc.com/posts/leetcoding-a-palindomer-checker/</guid>
+      <description>I find leetcoding enjoyable even outside interviewing context. Not enough to take it as a hobby tough.
+As now I search for a role, I practice it in my spare time (aha).
+My favourite platforms are exercism.io, leetcode.com and hackerrank.com.
+On leetcode.com you got to compare your successfull results to other submissions and this is really cool. Good data visualisation is always nice!
+I find it very noteworthy how a fancy and expressive one-line solution does not hold a good position against others regarding performance and memory usage:</description>
+    </item>
     
     <item>
       <title>Spacex Challenge</title>
