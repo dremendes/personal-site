@@ -6,10 +6,23 @@
     <description>Recent content on André Mendes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jan 2023 17:27:16 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jan 2023 23:04:53 -0300</lastBuildDate>
     
 	<atom:link href="https://mendesc.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spacex Challenge</title>
+      <link>https://mendesc.com/posts/spacex-challenge/</link>
+      <pubDate>Tue, 03 Jan 2023 23:04:53 -0300</pubDate>
+      
+      <guid>https://mendesc.com/posts/spacex-challenge/</guid>
+      <description>Spacex Challenge This is a Full-stack challenge I wrote for a company. I am still waiting for a response from them.
+In sumary, they asked to use SpaceX’s graphQL API to exhibit SpaceX data.
+I built it with Next.js and I am not a Full-stack developer. Next.js is cool.
+I thought the resulted looked fine so I&amp;rsquo;m sharing: https://spacex-launches-nine.vercel.app/
+Source: https://github.com/dremendes/spacex-launches</description>
+    </item>
     
     <item>
       <title>About my 2022</title>
@@ -17,11 +30,9 @@
       <pubDate>Tue, 03 Jan 2023 17:27:16 -0300</pubDate>
       
       <guid>https://mendesc.com/posts/first-post/</guid>
-      <description>Ok I will start blogging I got laid off last December.
-The whole team, actually. I thought it would be easier to get a new job.
-I was wrong. The market right now if full of excellent engineers looking for a new role.
-I am competent but far from competent as the most competent engineer I worked with.
-This engineer got laid off the same time I did. He&amp;rsquo;s still looking for a job.</description>
+      <description>I got laid off last December. The whole team, actually. I thought it would be easier to get a new job but I was wrong. The market right now if full of excellent engineers looking for a new role.
+Companies with open roles are overwhelmed with applications, they are taking longer to answer than ever before.
+Even companies without financial insecurities are laying people off. They are using this seasonal situation to rub down on costs.</description>
     </item>
     
   </channel>
